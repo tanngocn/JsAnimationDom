@@ -1,0 +1,63 @@
+*{margin:0;padding: 0;}
+body,html,.slidewrapper,.slidewrapper .slides, .slides ul,.slides ul li,.slides ul li .oneslide 
+{height: 100%; width: 100%;}
+.slidewrapper {position: relative; overflow:hidden;}
+.slides ul{ list-style:none; position: relative; perspective: 2000px;}
+.slides ul li{  position: absolute;top: 0;left: 0; opacity: 0}
+.slides ul li.active{opacity: 1}
+.slides ul li .oneslide {background-size: cover;}
+p.prev,p.next{ cursor: pointer;position: absolute;top: 50%;font-size: 90px;color: gray;transition:0.5s;transform: translateY(-50%);margin:0;}
+p.prev {left: 1%;}
+p.next {right: 1%;}
+p.next:hover,p.prev:hover{color: white;}
+.dira{animation:dira 1s forwards;}
+@-webkit-keyframes dira{
+	0%{
+		transform: translateX(0); opacity: 1;
+	}
+	40%{
+		transform: translateX(-300px); opacity: 1;
+	}
+	100%{
+		transform: translateX(100%); opacity: 1;
+	}
+}
+.divao{animation:divao 1s forwards; animation-delay: 0.4s;}
+@-webkit-keyframes divao{
+  	0%{
+		transform: translateX(-100%); opacity: 0;
+	}
+	40%{
+		transform: translateX(20%); opacity: 1;
+	}
+	100%{
+		transform: translateX(0); opacity: 1;
+	}
+}
+.diraprev{ animation:diraprev 1s forwards ; }
+@-webkit-keyframes diraprev{
+
+	0%{
+		transform: translateX(0); opacity: 1;
+	}
+	40%{
+		transform: translateX(400px); opacity: 1;
+	}
+	100%{
+		transform: translateX(-100%); opacity: 0;
+	}
+}
+.divaoprev{ animation:divaoprev 1s forwards ; animation-delay: 0.4s; }
+@-webkit-keyframes divaoprev{
+   	0%{
+		transform: translateX(100%); opacity: 0;
+	}
+	40%{
+		transform: translateX(-20%); opacity: 1;
+	}
+	100%{
+		transform: translateX(0); opacity: 1;
+	}
+}
+
+

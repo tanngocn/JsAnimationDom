@@ -1,0 +1,43 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.n1.dichxuong{
+	transition: 0.5s;
+	margin-top: 400px;
+	opacity:0;
+}
+.card{
+	transition: 0.5s;
+}
+/*transition add class thông thường*/
+.card.dichphai{
+	transform: translateX(600px);
+}
+/*Animation 2 chiều */
+.card.chieudi{
+	animation: chieudi 2s forwards;
+}
+@-webkit-keyframes chieudi{
+	0%{ transform: translateX(0px) translateY(0px); }
+	25%{transform: translateX(200px) translateY(0px);}
+	50%{transform: translateX(200px) translateY(200px);}
+	60%{transform: translateX(400px) translateY(200px);}
+	70%{transform: translateX(400px) translateY(400px);}
+	90%{transform: translateX(700px) translateY(400px);}
+	100%{transform: translateX(700px) translateY(600px);}
+}
+.card.chieuve{
+animation: chieuve 2s forwards;
+}
+@-webkit-keyframes chieuve{
+
+	0%{transform: translateX(700px) translateY(600px);}
+	25%{transform: translateX(700px) translateY(400px);}
+	50%{transform: translateX(400px) translateY(400px);}
+	60%{transform: translateX(400px) translateY(200px);}
+	70%{transform: translateX(200px) translateY(200px);}
+	90%{transform: translateX(200px) translateY(0px);}
+	100%{ transform: translateX(0px) translateY(0px); }
+}
+/*end Animation 2 chiều*/

@@ -1,0 +1,34 @@
+*{margin:0;padding: 0;}
+body,html,.slidewrapper,.slidewrapper .slides, .slides ul,.slides ul li,.slides ul li .oneslide 
+{height: 100%; width: 100%;}
+.slidewrapper {position: relative; overflow:hidden;}
+.slides ul{ list-style:none; position: relative; perspective: 2000px;}
+.slides ul li{  position: absolute;top: 0;left: 0; opacity: 0}
+.slides ul li.active{opacity: 1}
+.slides ul li .oneslide {background-size: cover;}
+p.prev,p.next{ cursor: pointer;position: absolute;top: 50%;font-size: 90px;color: gray;transition:0.5s;transform: translateY(-50%);margin:0;}
+p.prev {left: 1%;}
+p.next {right: 1%;}
+p.next:hover,p.prev:hover{color: white;}
+.dira{animation:dira 1s forwards;}
+@-webkit-keyframes dira{
+    from{transform: rotateY(0);opacity: 1; transform-origin: 0% 100%;}
+    to{transform: rotateY(40deg);opacity: 0; transform-origin: 0% 100%;}
+}
+.divao{animation:divao 1s forwards; animation-delay: 0.3s;}
+@-webkit-keyframes divao{
+    from{transform: translateX(-100%);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+.diraprev{ animation:diraprev 1s forwards ; }
+@-webkit-keyframes diraprev{
+   from{transform: translateX(0px);opacity: 1;}
+    to{transform: translateX(-100%);opacity: 0;}
+}
+.divaoprev{ animation:divaoprev 1s forwards ; animation-delay: 0.3s; }
+@-webkit-keyframes divaoprev{
+     from{transform: rotateY(40deg);opacity: 0; transform-origin: 0% 100%;}
+    to{transform: rotateY(0deg);opacity: 1; transform-origin: 0% 100%;}
+}
+
+

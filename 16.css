@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+    height: 50px;
+    line-height: 50px;
+    background-color: #9d1f26;
+    transition: 0.5s;
+}
+.menu.changecolor{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+	background: black;
+}
+
+.menu a {
+    color: white;
+    padding: 0 35px;
+    text-decoration: none;
+    font-family: segoe ui;
+}
+
+.banner {
+    background: url(img/a1.png) no-repeat center;
+    height: 100px;
+    background-size: contain;
+}
+.k3.codinh{
+	position: fixed;
+	top: 50px;
+}
